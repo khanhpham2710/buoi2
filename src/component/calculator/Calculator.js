@@ -2,6 +2,7 @@ import Input from "./Input"
 import Buttons from "./Buttons"
 import Result from './Result'
 import { useState } from "react"
+import "./Calculator.css"
 
 
 function Calculator(){
@@ -28,7 +29,7 @@ function Calculator(){
     }
 
     return (
-        <div>
+        <div className="container">
             <Input handleClick = {handleInput1}/>
             <Input handleClick = {handleInput2}/>
             <Buttons handleButton = {handleButton}/>

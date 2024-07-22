@@ -1,7 +1,9 @@
+import "Calculator.css"
+
 function Input({ handleClick }){
     return (
         <div>
-            <input type = "text" onChange={(e) => handleClick(e.target.value)}/>
+            <input className="input" type = "text" onChange={(e) => handleClick(e.target.value)}/>
         </div>
     )
 }
